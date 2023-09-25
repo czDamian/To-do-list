@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Inter;
+  src: url(Inter-Regular.ttf);
+}
+body {
+  background: linear-gradient(160deg, #ddeafd, #ddeafd, #c2d3ec, #2d2dff);
+  color: black;
+  font-size: 16px;
+  font-family: "Inter";
+  width: 100%;
+  min-height: 100vh;
+}
+ul,
+li {
+  list-style: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.to-do-app {
+  padding: 20px 20px 40px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px #c2d3ec;
+  background-color: #fff;
+  width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  max-height: 80vh;
+}
+
+input,
+button {
+  font: inherit;
+  border: none;
+  outline: 1px solid #2d2dff;
+  padding: 6px 12px;
+}
+h1 {
+  color: #2d2dff;
+  margin-bottom: 10px;
+}
+input {
+  border-radius: 12px;
+  width: 80%;
+}
+button {
+  border: 1px solid #c2d3ec;
+  background-color: #2d2dff;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  outline: 2px solid #2d2dff;
+}
+ul li {
+  margin: 10px;
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+.checked {
+  text-decoration: line-through;
+  text-decoration-style: double;
+}
+
+span {
+  float: right;
+  padding: 3px 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+span:hover {
+  background-color: color-mix(in oklab, white 90%, black);
+}
